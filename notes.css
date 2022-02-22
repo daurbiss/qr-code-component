@@ -1,0 +1,24 @@
+.card {
+  border-radius: 10px;
+/* border radius makes the edges round  */
+
+  align-content: center;
+/* this is to put the image and text centre aligned */
+  text-align: center;
+/* to align the text in center */
+
+  padding: 10px 5px 10px 5px;
+/* to add padding top right bottom left */
+
+  width: 260px;
+
+  position: absolute;
+/* absoulute position  */
+  left: 50%;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+
+}
