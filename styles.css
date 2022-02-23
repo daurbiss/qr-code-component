@@ -1,29 +1,52 @@
+
+/* box model: MARGIN - BORDER - PADDING - DIV box */
+/* inline vs block display - inline (determined by width of content)
+                            block (100% width, but height determined by content) */
+
+
 body {
   background-color: hsl(212, 45%, 89%);
+  font-family: 'Outfit', sans-serif;
+
+  /* flexbox: one-dimensional layout model + method to include space between items + alignment
+              one-dimensional = deals with layout in one dimension at a time - either as a row or as a column
+              two-dimensional = CSS Grid Layout - controls columns and rows together
+   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* min-height 100vh - means the height of this element equals 100% of screen (veiwport height)
+  50vh - 50% of screen */
+  min-height: 100vh;
+
 }
 
 .card {
   background-color: white;
-  font-family: 'Outfit', sans-serif;
-  border-radius: 10px;
+  border-radius: 1em;
+  /* border radius makes the edges round  */
   align-content: center;
   text-align: center;
   padding: 10px 5px 10px 5px;
-  width: 260px;
-  position: absolute;
+  /* to add padding top right bottom left */
+
+  max-width: 15.5em;
+  /* position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  /* instead of absolute positioning of card - use flexbox in body tag */
 }
 
 img {
-  border-radius: 10px;
-  height: 250px;
-  width: 250px;
-
+  border-radius: 1em;
+  height: 15em;
+  width: 15em;
 }
 
-h2 {
+h1 {
+  font-size: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
 }
